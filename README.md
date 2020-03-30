@@ -4,7 +4,7 @@
 
 ## 프리뷰
 
-![이미지 1]()
+![이미지 1](https://github.com/Vallista/vallista-homepage-code/blob/master/screenshots/1.png?raw=true)
 
 ## 수정하려면?
 
