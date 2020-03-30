@@ -1,0 +1,121 @@
+.careers {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+  & .career {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+
+    & .intro {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      & > .title {
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+
+      & > .department {
+        font-size: 1.2rem;
+      }
+
+      & > .position {
+        font-size: 1rem;
+      }
+    }
+
+    & .date {
+      margin-bottom: 16px;
+
+      & > .start {
+        margin-right: 0.3rem;
+        color: #888;
+      }
+
+      & > .end {
+        color: #888;
+      }
+    }
+
+    & .descriptions {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      & > .description {
+        color: #666;
+      }
+    }
+
+    & .projects {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding-left: 12px;
+      border-left: 4px solid #2a363b;
+
+      & .project {
+        & > .title {
+          font-weight: 400;
+          display: block;
+          font-size: 1.2rem;
+          margin-bottom: 6px;
+        }
+
+        & > .descriptions {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 16px;
+
+          & > .description {
+          }
+        }
+
+        & > .date {
+          & > .start {
+            margin-right: 0.3rem;
+            color: #888;
+          }
+
+          & > .end {
+            color: #888;
+          }
+        }
+
+        & > .whiches {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 16px;
+
+          & .which {
+            color: #666;
+          }
+        }
+
+        & > .techStacks {
+          display: flex;
+          flex-wrap: wrap;
+
+          & > .techStack {
+            background-color: #e84a5f;
+            color: #fff;
+            padding: 6px 10px 6px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .careers {
+    padding: 36px 24px 36px 24px;
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+  padding-top: 12px;
+
+  & .item {
+    margin-bottom: 24px;
+  }
+}
