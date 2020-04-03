@@ -8,46 +8,48 @@
     flex-direction: column;
     margin-bottom: 48px;
 
-    & .intro {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 16px;
+    & .headerWrapper {
+      & .intro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
 
-      & > .title {
-        font-size: 1.7rem;
-        font-weight: 400;
-        margin-bottom: 24px;
+        & > .title {
+          font-size: 1.7rem;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+
+        & > .department {
+          font-size: 1.2rem;
+        }
+
+        & > .position {
+          font-size: 1rem;
+        }
       }
 
-      & > .department {
-        font-size: 1.2rem;
+      & .date {
+        margin-bottom: 16px;
+
+        & > .start {
+          margin-right: 0.3rem;
+          color: #888;
+        }
+
+        & > .end {
+          color: #888;
+        }
       }
 
-      & > .position {
-        font-size: 1rem;
-      }
-    }
+      & .descriptions {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
 
-    & .date {
-      margin-bottom: 16px;
-
-      & > .start {
-        margin-right: 0.3rem;
-        color: #888;
-      }
-
-      & > .end {
-        color: #888;
-      }
-    }
-
-    & .descriptions {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 32px;
-
-      & > .description {
-        color: #666;
+        & > .description {
+          color: #666;
+        }
       }
     }
 
@@ -66,23 +68,25 @@
           margin-bottom: 6px;
         }
 
-        & > .descriptions {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 16px;
+        & > .wrap {
+          & > .descriptions {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
 
-          & > .description {
-          }
-        }
-
-        & > .date {
-          & > .start {
-            margin-right: 0.3rem;
-            color: #888;
+            & > .description {
+            }
           }
 
-          & > .end {
-            color: #888;
+          & > .date {
+            & > .start {
+              margin-right: 0.3rem;
+              color: #888;
+            }
+
+            & > .end {
+              color: #888;
+            }
           }
         }
 
@@ -107,6 +111,7 @@
             border-radius: 6px;
             margin-bottom: 12px;
             margin-right: 8px;
+            font-weight: 600;
           }
         }
       }
@@ -117,5 +122,78 @@
 @media screen and (max-width: 400px) {
   .careers {
     padding: 36px 24px 36px 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .careers {
+    & .career {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      & .headerWrapper {
+        flex: 1;
+
+        & .intro {
+          margin-bottom: 0;
+          font-size: 6px;
+        }
+
+        & .date {
+          margin-bottom: 24px;
+        }
+
+        & .descriptions {
+          & .description {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      & .projects {
+        padding-left: 48px;
+        flex: 2;
+        border-left: none;
+
+        & .project {
+          & > .title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+          }
+
+          & > .wrap {
+            display: flex;
+            flex-direction: column-reverse;
+
+            & > .descriptions {
+              & > .description {
+                font-size: 0.9rem;
+              }
+            }
+
+            & > .date {
+              font-size: 0.9rem;
+              margin-bottom: 12px;
+            }
+          }
+
+          & > .whiches {
+            margin-bottom: 24px;
+
+            & > .which {
+              font-size: 0.9rem;
+            }
+          }
+
+          & > .techStacks {
+            & > .techStack {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
   }
 }

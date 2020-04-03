@@ -8,3 +8,9 @@
     margin-bottom: 24px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 60rem;
+  }
+}
